@@ -1,7 +1,4 @@
 #CONFIGURACION
-spring:
-  application:
-    name: demoPrueba
   mvc:
     view:
       prefix: /WEB-INF/view/
