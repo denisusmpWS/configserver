@@ -1,0 +1,30 @@
+#CONFIGURACION
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/view/
+      suffix: .jsp
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update 
+  freemarker:
+    enabled: false
+  thymeleaf:
+    enabled: false
+    cache: false
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bd_prueba
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+#PUERTO
+
+#REGISTRO
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7777/eureka
+      
+logging.config: classpath:logback.xml
